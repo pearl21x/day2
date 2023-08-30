@@ -4,25 +4,25 @@ DOCTYPE html>
     <title>Quick Lab 6 - CSS Selectors</title>
     <style>
         em { color: fuchsia; }     /** Anything emphasised **/
-        { color: midnightblue; }        /** Anything emphasised inside a paragraph **/
-        { color: purple; }      /** Any footer that is a direct child of body **/
-        { color: teal; }        /** Any paragraph that is a direct sibling of a heading 1 **/
-        { color: yellow; }      /** Any paragraph that is a younger sibling of a heading 1 **/
-        { color: navy; }        /** Any paragraph that has a class of interactive **/
-        { color: lime;}         /** Any paragraph that has a class of interactive and hovered over **/
-        { color: red;}          /** An element with an id of special **/
+        p em { color: midnightblue; }        /** Anything emphasised inside a paragraph **/
+        body > footer { color: purple; }      /** Any footer that is a direct child of body **/
+        p + h1{ color: teal; }        /** Any paragraph that is a direct sibling of a heading 1 **/
+        p ~ h1 { color: yellow; }      /** Any paragraph that is a younger sibling of a heading 1 **/
+        p.interactive{ color: navy; }        /** Any paragraph that has a class of interactive **/
+        p.interactive:hover{ color: lime;}         /** Any paragraph that has a class of interactive and hovered over **/
+        #special { color: red;}          /** An element with an id of special **/
 
-        {                       /** Any articles, headers, navs, uls, lis and footers **/
+        article, header, nav, ul, li, footer {                       /** Any articles, headers, navs, uls, lis and footers **/
             margin: 1em;
             padding: 1em;
             outline: 4px dashed black;
         }
 
-        {                       /** Any links **/
+        link {                       /** Any links **/
             color: blue;
         }
 
-        {                       /** Any unordered list that is a child of a nav **/
+        nav ul {                       /** Any unordered list that is a child of a nav **/
             list-style: none;
         }
 
