@@ -12,3 +12,4 @@ console.log(start)
 console.log(end)
 let subStr = stringTest.substring(start, end);
 console.log(subStr);
+document.write("<p>" + subStr + "</p>");
