@@ -10,3 +10,5 @@ let start = stringTest.indexOf("MODEL");
 let end = stringTest.lastIndexOf('MAJOR');
 console.log(start)
 console.log(end)
+let subStr = stringTest.substring(start, end);
+console.log(subStr);
