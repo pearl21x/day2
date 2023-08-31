@@ -3,5 +3,10 @@ console.log(numTest);
 let twoDecimalPoints = numTest.toFixed(2);
 console.log(twoDecimalPoints);
 let stringTest = `I am the very model of a modern major general`;
-let indexOfM = stringTest.indexOf(`m`);
+stringTest = stringTest.toUpperCase();
+let indexOfM = stringTest.indexOf(`M`);
 console.log(indexOfM);
+let start = stringTest.indexOf("MODEL");
+let end = stringTest.lastIndexOf('MAJOR');
+console.log(start)
+console.log(end)
