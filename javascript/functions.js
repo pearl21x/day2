@@ -8,17 +8,17 @@ const movies = [
 
 // Part 1 - Create a function to find a movie and output it's detail
 
-function findMovie(movieTitle) {
-    for (const movie of movies) {
-        const title = movie['title'];
-        if (title == movieTitle) {
-            console.log(movie);
-        }
-    }
-}
+// function findMovie(movieTitle) {
+//     for (const movie of movies) {
+//         const title = movie['title'];
+//         if (title == movieTitle) {
+//             console.log(movie);
+//         }
+//     }
+// }
 
-findMovie('Jaws');
-findMovie('Star Wars');
+// findMovie('Jaws');
+// findMovie('Star Wars');
 
 // Part 2 = Create a function to return a movie object
 
